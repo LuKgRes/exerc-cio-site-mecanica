@@ -1,13 +1,13 @@
 * {
     margin: 0;
-
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 300;
-    
-
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
+
+
 
 .navigation {
     background-color: #B91C1C;
@@ -44,6 +44,11 @@ nav li:hover {
 
 body {
     background-color: #4b5563;
+}
+
+.home img{
+    height: 500px;
+width: 100%;
 }
 
 .Destaques h3 {
