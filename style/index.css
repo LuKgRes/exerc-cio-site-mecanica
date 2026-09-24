@@ -46,11 +46,42 @@ body {
     background-color: #4b5563;
 }
 
+.home{
+    position: relative;
+}
+
 .home img{
     height: 500px;
 width: 100%;
 }
 
-.Destaques h3 {
+.titulo_home h2{
+    font-weight: 700;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.Destaques h2 {
     font-weight: 500;
+}
+
+.separador {
+    height: 10px;
+    background-color: #B91C1C;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
