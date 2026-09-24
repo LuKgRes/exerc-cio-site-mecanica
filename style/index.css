@@ -1,10 +1,10 @@
 * {
     margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 
@@ -46,45 +46,59 @@ body {
     background-color: #4b5563;
 }
 
-.home{
+.home {
     position: relative;
 }
 
-.home img{
+.home img {
     height: 500px;
-width: 100%;
+    width: 100%;
 }
 
-.titulo_home h2{
+.titulo_home h1 {
     font-weight: 700;
+    font-size: 50px;
     position: absolute;
     top: 10%;
     left: 5%;
 }
 
-.cards{
+.destaques {
+    height: 40px;
+    background-color: #B91C1C;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.destaques h2{
+    font-weight: 700;
+    font-size: 35px;
+    color: #fff;
+}
+
+.cards {
     display: flex;
     flex-wrap: wrap;
     gap: 3%;
 }
 
-.card{
-    flex: 1 1 calc(32% - 3%);
+.card {
+    flex: 1 1 calc(45% - 3%);
     background-color: #fff;
     border-radius: 8px;
     padding: 4px;
     margin-bottom: 3%;
 }
 
-.card h3{
+.card h3 {
     padding-bottom: 1%;
 }
 
-.card p{
+.card p {
     padding-bottom: 1%;
 }
 
-.card img{
+.card img {
     width: 32px;
 }
 
@@ -95,13 +109,13 @@ width: 100%;
     margin-bottom: 20px;
 }
 
-footer{
+footer {
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.redes{
+.redes {
     display: flex;
     gap: 15px;
     justify-content: center;
