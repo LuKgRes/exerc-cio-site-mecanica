@@ -1,14 +1,21 @@
 * {
     margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
+body {
+    background-color: #4b5563;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-nav {
+main {
+    flex: 1;
+}
+
+.navigation {
     background-color: #B91C1C;
     font-weight: 700;
     display: flex;
@@ -27,20 +34,179 @@ nav ul {
 
 nav ul li a {
     color: #ffffff;
-
-}
-
-nav a {
     text-decoration: none;
     padding-right: 2px;
-
 }
 
-nav li:hover {
+nav li:hover,
+#atual {
     border-bottom: 2px solid #ffffff;
     padding-bottom: 5px;
 }
 
-body {
-    background-color: #4b5563;
+.contato {
+    background-color: #fff;
+    border-bottom: 10px solid #B91C1C;
+    padding: 40px 5%;
+    text-align: center;
 }
+
+.contato h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.contato-sub {
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+.btn-contato,
+.btn-enviar {
+    background-color: #B91C1C;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 28px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-contato:hover,
+.btn-enviar:hover {
+    background-color: #991b1b;
+}
+
+.formulario {
+    max-width: 700px;
+    margin: 30px auto 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 25px;
+    border: 3px solid #B91C1C;
+    border-radius: 8px;
+}
+
+.formulario[hidden],
+.msg-sucesso[hidden] {
+    display: none;
+}
+
+.linha {
+    display: flex;
+    gap: 18px;
+}
+
+.linha .campo {
+    flex: 1;
+    min-width: 0;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #B91C1C;
+}
+
+.btn-enviar {
+    align-self: flex-start;
+}
+
+.msg-sucesso {
+    color: #15803d;
+    font-weight: 700;
+}
+
+.localizacao {
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #fff;
+}
+
+.localizacao-info h2 {
+    font-size: 32px;
+    padding-bottom: 12px;
+}
+
+.localizacao-info p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.mapa {
+    width: 100%;
+    height: 450px;
+    background-color: #e5e7eb;
+    border: 3px solid #B91C1C;
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    color: #4b5563;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.mapa iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.separador {
+    height: 10px;
+    background-color: #B91C1C;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #fff;
+}
+
+.redes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.redes img {
+    width: 32px;
+}
+

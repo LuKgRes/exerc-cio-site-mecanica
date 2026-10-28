@@ -1,24 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-     <link rel="stylesheet" href="style/servico.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Serviços | Mecânica Siricutico</title>
+    <link rel="stylesheet" href="style/servico.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<nav>
-    <ul>
-        <li > <a href="index.html">Home</a> </li>
-        <li id="atual"> <a href="servicos.html">Serviços</a> </li>
-        <li> <a href="equipe.html">Equipe</a> </li>
-        <li> <a href="galeria.html">Galeria</a> </li>
-        <li> <a href="contato.html">Contato</a> </li>
-    </ul>
-</nav>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li id="atual"><a href="servicos.html">Serviços</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="titulo-pagina">
+            <h1>NOSSOS SERVIÇOS:</h1>
+        </div>
+
+        <section class="servicos">
+
+            <article class="servico" id="troca-oleo">
+                <img class="servico-img" src="assets/TrocaOleo.jpg" alt="Mecânico realizando troca de óleo">
+                <div class="servico-texto">
+                    <h2>Troca de óleos</h2>
+                    <p>Ajude a prolongar a vida útil do motor com a troca de óleo e filtros dentro dos intervalos
+                        recomendados pelo fabricante.</p>
+                    <ul>
+                        <li>Óleo mineral, semissintético e sintético</li>
+                        <li>Troca de filtro de óleo, ar e combustível</li>
+                        <li>Verificação dos níveis de fluidos</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="servico" id="freios-suspensao">
+                <img class="servico-img" src="assets/Suspensao.jpg" alt="Mecânico inspecionando freios">
+                <div class="servico-texto">
+                    <h2>Freios e suspensão</h2>
+                    <p>Inspeção e manutenção de freios, amortecedores, pastilhas e outros componentes essenciais para
+                        a sua segurança.</p>
+                    <ul>
+                        <li>Troca de pastilhas e discos de freio</li>
+                        <li>Troca de amortecedores e molas</li>
+                        <li>Alinhamento e balanceamento</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="servico" id="diagnostico">
+                <img class="servico-img" src="assets/Diagnostico.jpg" alt="Mecânico fazendo diagnóstico eletrônico">
+                <div class="servico-texto">
+                    <h2>Diagnóstico automotivo</h2>
+                    <p>Identificação de falhas com equipamentos de diagnóstico e avaliação dos sistemas eletrônicos do
+                        veículo.</p>
+                    <ul>
+                        <li>Leitura de códigos de falha (scanner)</li>
+                        <li>Análise de injeção eletrônica e sensores</li>
+                        <li>Relatório completo do estado do veículo</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="servico" id="revisao">
+                <img class="servico-img" src="assets/Revisao.jpg" alt="Mecânico fazendo revisão completa">
+                <div class="servico-texto">
+                    <h2>Revisão completa</h2>
+                    <p>Verificação de componentes essenciais para identificar possíveis problemas antes que se tornem
+                        reparos mais caros.</p>
+                    <ul>
+                        <li>Revisão preventiva por quilometragem</li>
+                        <li>Checagem de freios, suspensão, motor e elétrica</li>
+                        <li>Revisão antes de viagens</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="servico" id="consertos">
+                <img class="servico-img" src="assets/Consertos.jpg" alt="Mecânico realizando conserto no motor">
+                <div class="servico-texto">
+                    <h2>Consertos e reparos</h2>
+                    <p>Reparos mecânicos em geral, com peças de qualidade e acompanhamento do início ao fim do
+                        serviço.</p>
+                    <ul>
+                        <li>Reparos no motor e câmbio</li>
+                        <li>Sistema de arrefecimento e escapamento</li>
+                        <li>Parte elétrica, bateria e alternador</li>
+                    </ul>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="separador"></div>
+        <p>Siga nossas redes sociais:</p>
+        <div class="redes">
+            <a href="https://www.facebook.com"><img src="assets/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="assets/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
 
 </body>
 
