@@ -149,3 +149,7 @@ footer {
     justify-content: center;
     padding-bottom: 20px;
 }
+
+@midia(max-width:768px){
+    
+}
