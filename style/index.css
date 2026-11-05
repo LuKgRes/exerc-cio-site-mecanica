@@ -90,8 +90,8 @@ body {
     flex-wrap: wrap;
     gap: 3%;
     padding: 0 5%;
-   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-  
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+
 }
 
 .card {
@@ -117,7 +117,7 @@ body {
 }
 
 .card img {
-     flex: 0 0 40%; 
+    flex: 0 0 40%;
     width: 10%;
     display: block;
     aspect-ratio: 4/3;
@@ -143,13 +143,35 @@ footer {
 }
 
 .redes {
-
     display: flex;
     gap: 15px;
     justify-content: center;
     padding-bottom: 20px;
 }
 
-@midia(max-width:768px){
-    
+@media(max-width:768px) {
+    .home img {
+        display: block;
+        height: 300px;
+        width: 100%;
+    }
+
+    .card {
+        flex: 1 1 calc(55% - 3%);
+        display: flex;
+        align-items: flex-start;
+        min-width: 0;
+        border-radius: 8px;
+        padding: 4px;
+        margin-bottom: 3%;
+    }
+
+    .redes img {
+        width: 50  px;
+    }
+
+}
+
+@media(mas-width:425px) {
+
 }
