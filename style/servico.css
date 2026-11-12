@@ -57,9 +57,9 @@ nav li:hover,
 
 .servicos {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     gap: 25px;
-    padding: 30px 5%;        
+    padding: 30px 5%;
 }
 
 .servico {
@@ -71,7 +71,7 @@ nav li:hover,
     border: 3px solid #B91C1C;
     border-radius: 8px;
     padding: 15px;
-    scroll-margin-top: 20px; 
+    scroll-margin-top: 20px;
 }
 
 .servico-img {
@@ -133,3 +133,15 @@ footer {
     width: 32px;
 }
 
+@media(max-width: 768px) {
+
+    .redes img {
+        width: 50px;
+    }
+
+
+    .servico {
+        flex-direction:column ;
+    }
+
+}
